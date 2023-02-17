@@ -23,7 +23,7 @@ pipeline {
 
           // Add steps here
           openshift.withCluster() { 
-  openshift.withProject("raj-govt") {
+    openshift.withProject("raj-govt") {
   
     def buildConfigExists = openshift.selector("bc", "codelikethewind").exists() 
     
